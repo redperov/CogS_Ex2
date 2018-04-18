@@ -1,0 +1,13 @@
+Plan found with cost: 6
+1. (ATTACK-WINDOWS7 A C1 C4)
+2. (ATTACK-WINDOWS10 A C1 C2)
+3. (ATTACK-UBUNTU16 A C2 C7)
+4. (ATTACK-WINDOWS7 A C4 C6)
+5. (ATTACK-MINT A C6 C10)
+6. (REACH-GOAL)
+Time: 0
+Generated: 0
+Expanded: 0
+Total time: 3.09944e-09
+Nodes generated during search: 35
+Nodes expanded during search: 30

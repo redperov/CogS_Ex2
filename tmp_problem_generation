@@ -1,0 +1,75 @@
+
+    (define (problem attack2)
+    (:domain  attack)
+    (:objects
+        
+	a
+	c9
+	c8
+	c3
+	c2
+	c1
+	c10
+	c7
+	c6
+	c5
+	c4)
+(:init
+	(is-ubuntu16 c9)
+	(is-ubuntu16 c8)
+	(is-ubuntu16 c7)
+	(is-windows10 c1)
+	(is-windows10 c3)
+	(is-windows10 c2)
+	(controlled-by c1 a)
+	(is-mint c10)
+	(connected-to c7 c9)
+	(connected-to c4 c6)
+	(connected-to c8 c7)
+	(connected-to c1 c4)
+	(connected-to c1 c3)
+	(connected-to c6 c5)
+	(connected-to c10 c9)
+	(connected-to c9 c10)
+	(connected-to c3 c1)
+	(connected-to c4 c1)
+	(connected-to c9 c8)
+	(connected-to c5 c6)
+	(connected-to c4 c5)
+	(connected-to c7 c8)
+	(connected-to c6 c10)
+	(connected-to c3 c2)
+	(connected-to c8 c9)
+	(connected-to c10 c3)
+	(connected-to c2 c3)
+	(connected-to c6 c4)
+	(connected-to c2 c1)
+	(connected-to c2 c7)
+	(connected-to c5 c8)
+	(connected-to c5 c4)
+	(connected-to c1 c2)
+	(connected-to c10 c6)
+	(connected-to c7 c2)
+	(connected-to c3 c10)
+	(connected-to c8 c5)
+	(connected-to c9 c7)
+	(attacker a)
+	(computer c1)
+	(computer c10)
+	(computer c7)
+	(computer c6)
+	(computer c5)
+	(computer c4)
+	(computer c9)
+	(computer c3)
+	(computer c8)
+	(computer c2)
+	(is-windows7 c4)
+	(is-windows7 c6)
+	(is-windows7 c5)
+            )
+    (:goal
+        (and (or (controlled-by c1 a) (controlled-by c2 a) (controlled-by c3 a)) (or (controlled-by c4 a) (controlled-by c5 a) (controlled-by c6 a)) (or (controlled-by c7 a) (controlled-by c8 a) (controlled-by c9 a)) (controlled-by c10 a))
+        )
+    )
+    
